@@ -11,6 +11,6 @@ spec:
         spec:
          containers:
          - name: sample-ctr
-           image: samiralur/newdisplayerv_1:1
+           image: samiralur/newdisplayerv_1:v2
            ports:
            - containerPort: 80
