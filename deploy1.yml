@@ -1,0 +1,20 @@
+﻿apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+	name: deploy1
+spec:
+	replicas: 3
+    template: 
+    	metadata:
+        	labels:
+        		app: app-v1
+        spec:
+        	containers:
+            - name: sample-ctr
+              image: samiralur/newdisplayerv_1:1
+              ports:
+              - containerPort: 80
+                
+        	
+                
+       	
